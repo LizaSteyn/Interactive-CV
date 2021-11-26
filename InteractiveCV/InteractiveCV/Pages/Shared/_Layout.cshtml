@@ -1,47 +1,59 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - InteractiveCV</title>
-
-    <environment include="Development">
-        <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
-        <link href="~/lib/bootstrap/dist/css/bootstrap-grid.css" rel="stylesheet" />
-        <link href="~/lib/bootstrap/dist/css/bootstrap-reboot.css" rel="stylesheet" />
-        <link href="~/lib/bootstrap/dist/css/bootstrap-utilities.css" rel="stylesheet" />
-        <link rel="stylesheet" href="~/css/site.css" />
-    </environment>
+    <link href="~/css/bootstrapSketchy.css" rel="stylesheet" />
+ <!--   <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <nav class="=">
-
-    </nav>
-
-    <partial name="_CookieConsentPartial" />
-
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2021 - InteractiveCV</p>
-        </footer>
+    <div class="wrapper">
+        <nav id="sidebar" class="bg-primary text-light pt-3 text-center">
+            <div class="sidebar-heading">
+                <h2>Liza-Marié Steyn</h2>
+                <img src="~/images/webResult.JPG" width="300" height="300" alt="Liza-Marié Steyn's image was supposed to be here?!'"/>
+            </div>
+            <ul class="list-unstyled">
+                <li class="active">
+                    <a class="nav-link text-white" href="/Index"><h3>Home</h3></a>
+                    <a class="nav-link text-white" href="/About"><h3>About Me</h3></a>
+                    <a class="nav-link text-white" href="/Portfolio"><h3>Portfolio</h3></a>
+                    <a class="nav-link text-white" href="/EmploymentHistory"><h3>Employment History</h3></a>
+                </li>
+                <li class="nav-item dropdown ml-3 m-2">
+                    <a class="nav-link dropdown-toggle text-light" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><h3>Get In Touch</h3></a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item text-white" href="/Contact?view=Details"><h4>Contact Details</h4></a>
+                        <a class="dropdown-item text-white" href="/Contact?view=Me"><h4>Contact Me</h4></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="toggle">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fas fa-align-left"></i>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
     </div>
+    <footer class="border-top footer bg-dark text-muted">
+        <div class="container">
+            &copy; 2021 - InteractiveCV - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
 
-    <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-    </environment>
-    <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
-        </script>       
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
-    </environment>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
 
     @RenderSection("Scripts", required: false)
 </body>
