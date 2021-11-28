@@ -11,6 +11,12 @@ namespace InteractiveCV.Pages
     {
         public void OnGet()
         {
+            
+        }
+
+        public void OnPost()
+        {
+            
         }
     }
 }

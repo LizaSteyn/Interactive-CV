@@ -8,7 +8,6 @@ C:\Users\Liza\Documents\GitHub\Interactive-CV\InteractiveCV\InteractiveCV\bin\De
 C:\Users\Liza\Documents\GitHub\Interactive-CV\InteractiveCV\InteractiveCV\bin\Debug\netcoreapp3.1\InteractiveCV.pdb
 C:\Users\Liza\Documents\GitHub\Interactive-CV\InteractiveCV\InteractiveCV\bin\Debug\netcoreapp3.1\InteractiveCV.Views.dll
 C:\Users\Liza\Documents\GitHub\Interactive-CV\InteractiveCV\InteractiveCV\bin\Debug\netcoreapp3.1\InteractiveCV.Views.pdb
-C:\Users\Liza\Documents\GitHub\Interactive-CV\InteractiveCV\InteractiveCV\obj\Debug\netcoreapp3.1\InteractiveCV.csproj.AssemblyReference.cache
 C:\Users\Liza\Documents\GitHub\Interactive-CV\InteractiveCV\InteractiveCV\obj\Debug\netcoreapp3.1\InteractiveCV.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Liza\Documents\GitHub\Interactive-CV\InteractiveCV\InteractiveCV\obj\Debug\netcoreapp3.1\InteractiveCV.AssemblyInfoInputs.cache
 C:\Users\Liza\Documents\GitHub\Interactive-CV\InteractiveCV\InteractiveCV\obj\Debug\netcoreapp3.1\InteractiveCV.AssemblyInfo.cs
@@ -37,6 +36,7 @@ C:\Users\Liza\Documents\GitHub\Interactive-CV\InteractiveCV\InteractiveCV\obj\De
 C:\Users\Liza\Documents\GitHub\Interactive-CV\InteractiveCV\InteractiveCV\obj\Debug\netcoreapp3.1\InteractiveCV.genruntimeconfig.cache
 C:\Users\Liza\Documents\GitHub\Interactive-CV\InteractiveCV\InteractiveCV\obj\Debug\netcoreapp3.1\InteractiveCV.csproj.CopyComplete
 C:\Users\Liza\Documents\GitHub\Interactive-CV\InteractiveCV\InteractiveCV\obj\Debug\netcoreapp3.1\Razor\Pages\About.cshtml.g.cs
-C:\Users\Liza\Documents\GitHub\Interactive-CV\InteractiveCV\InteractiveCV\obj\Debug\netcoreapp3.1\Razor\Pages\Contact.cshtml.g.cs
 C:\Users\Liza\Documents\GitHub\Interactive-CV\InteractiveCV\InteractiveCV\obj\Debug\netcoreapp3.1\Razor\Pages\EmploymentHistory.cshtml.g.cs
 C:\Users\Liza\Documents\GitHub\Interactive-CV\InteractiveCV\InteractiveCV\obj\Debug\netcoreapp3.1\Razor\Pages\Portfolio.cshtml.g.cs
+C:\Users\Liza\Documents\GitHub\Interactive-CV\InteractiveCV\InteractiveCV\obj\Debug\netcoreapp3.1\Razor\Pages\ContactDetails.cshtml.g.cs
+C:\Users\Liza\Documents\GitHub\Interactive-CV\InteractiveCV\InteractiveCV\obj\Debug\netcoreapp3.1\Razor\Pages\ContactMe.cshtml.g.cs
