@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Interactive_CV</title>
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/theme/bootstrapSketchy.css" rel="stylesheet" />
+    <link href="~/lib/fontawesome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <!--WHOLE PAGE WRAPPER-->
+    <div class="wrapper">
+        <!--SIDEBAR-->
+        <nav id="sidebar" class="bg-dark text-light text-center">
+            <div class="sidebar-header">
+                <!--NAV BAR HEADING-->
+                <h3>Liza-Marie Steyn<img src="~/images/webResult.JPG" width="200" height="200" alt="Liza-Marié Steyn's image was supposed to be here?!'" /></h3>
+
+                <!--ABBREVIATION-->
+                <strong><h2>LS</h2></strong>
+            </div>
+            <ul class="list-unstyled">
+                <li class="active"><a href="/Index" id="component" class="text-light"><i class="fas fa-home"></i><h4 class="d-inline"> Home</h4></a></li>
+                <li><a href="/About" id="component" class="text-light"><i class="fas fa-question"></i><h4 class="d-inline">About Me</h4></a></li>
+                <li><a href="/Portfolio" id="component" class="text-light"><i class="fas fa-book-open"></i><h4 class="d-inline">Portfolio</h4></a></li>
+                <li><a href="/EmploymentHistory" id="component" class="text-light"><i class="fas fa-briefcase"></i><h4 class="d-inline">Employment History</h4></a></li>
+                <li>
+                    <a href="#contactSubmenu" id="component" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-light"><i class="fas fa-phone"></i><h4 class="d-inline">Contact</h4></a>
+                    <ul class="collapse list-unstyled" id="contactSubmenu">
+                        <li><a href="/ContactDetails" class="text-light"><i class="fas fa-clipboard-list"></i>Contact Details</a></li>
+                        <li><a href="/ContactMe" class="text-light"><i class="fas fa-envelope"></i>Contact Me</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!--MAIN PAGE ELEMENTS-->
+        <div class="container" id="content">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="toggle">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <footer class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2021 - Interactive_CV - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            </div>
+        </footer>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/lib/fontawesome/js/all.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+    
+</body>
+</html>
