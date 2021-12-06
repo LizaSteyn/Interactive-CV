@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Special+Elite&display=swap");
+:root {
+  --color1:#F6F4F2;
+  --color2:#425664;
+  --color3:#C6AD8F;
+  --color4:#E1E2E2;
+  --color5:#646C79;
+  --pillColor1:#11ABC1;
+  --pillColor2:#DF3062;
+  --pillColor3:#F5B935;
+  --pillColor4:#4BAC3F;
+  --pillColor5:#9E15BF;
+  --pillColor6:#FA2742;
+  --pillColor7:#051622;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: Fredericka the Great, cursive;
+  padding: 2rem;
+}
+
+h2 {
+  text-align: center;
+  font-family: Fredericka the Great, cursive;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  max-width: 80rem;
+  max-height: 5rem;
+  border: none;
+}
+
+.body-container {
+  width: 100vw;
+  height: 100vw;
+  background-color: var(--color1);
+  font-family: Special Elite, cursive;
+  font-size: 62.5%;
+}
+
+.container-fluid {
+  background-color: var(--color2);
+}
+
+.nav-container {
+  place-content: normal left;
+  background-color: var(--color2);
+  margin: 0;
+}
+
+.nav-container .navbar {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.nav-link {
+  padding: 1rem;
+  color: var(--color3);
+}
+
+.nav-link:hover {
+  font-weight: bold;
+  color: var(--color3);
+}
+
+.toggle {
+  color: var(--color3);
+  font-size: 1.5rem;
+  right: 0;
+}
+
+.toggle:hover {
+  font-size: 2rem;
+}
+
+.card {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 4rem;
+  -webkit-box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+  color: var(--color4);
+  background-color: var(--color5);
+}
+
+.card .card-body {
+  background-color: var(--color5);
+  font-size: 1.2rem;
+}
+
+.card .card-title {
+  text-align: center;
+  font-family: Fredericka the Great, cursive;
+  background-color: var(--color5);
+  border-color: var(--color3);
+}
+
+.card .card-text {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.card .card-footer {
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: var(--color5);
+}
+
+.card blockquote {
+  font-size: 0.9rem;
+  text-align: justify;
+  padding-top: 1rem;
+}
+
+.card cite {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.reference {
+  cursor: pointer;
+}
+
+.bg-img {
+  background-image: image("../images/webResul.JPG");
+  margin-top: 2rem;
+}
+
+.accordion-flush {
+  margin: auto;
+  margin-top: 2rem;
+  max-width: 80%;
+  -webkit-box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.accordion-flush .accordion-header {
+  padding: 0.5rem;
+}
+
+.accordion-flush .accordion-header h2 {
+  color: black;
+}
+
+.accordion-flush .accordion-header .fa-chevron-down {
+  color: black;
+}
+
+.accordion-flush .accordion-body {
+  padding: 2rem;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.accordion-flush .accordion-body .card {
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+.accordion-flush .accordion-body .card .card-body {
+  padding-left: 4rem;
+}
+
+.timeline {
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.carousel {
+  left: 0;
+}
+
+.carousel .carousel-indicators {
+  bottom: 0;
+  width: 100%;
+  position: static;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding: 1rem;
+  background-color: yellow;
+}
+
+.carousel .carousel-indicators .year {
+  text-indent: 0 !important;
+  font-size: 1rem;
+  background: 0 0;
+  border: none;
+  margin: 0 !important;
+  position: relative;
+  width: 10% !important;
+}
+
+.carousel .carousel-indicators .year::before {
+  position: absolute;
+  content: '';
+  border-top: 1px solid #c8cbd0;
+  width: 100%;
+  left: 0;
+}
+
+.carousel .carousel-indicators .year h4 {
+  margin-top: -41px;
+  position: absolute;
+  left: 52%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 1.5rem;
+}
+
+.carousel .carousel-indicators .year i {
+  margin-top: -8px;
+  position: absolute;
+  font-size: 2rem;
+}
+
+.carousel .carousel-indicators .year .active i {
+  color: #2ecc71;
+}
+
+.carousel .carousel-indicators .year .active h4 {
+  color: #2ecc71;
+  font-size: 2rem;
+  position: absolute;
+  text-align: center;
+  margin-top: -49px;
+}
+
+.carousel-inner .carousel-item {
+  top: 0;
+}
+
+.carousel-inner .card {
+  width: 100%;
+  height: 100%;
+  color: var(--color4);
+}
+
+.carousel-inner .card .card-body {
+  font-size: 1.2rem;
+}
+
+.carousel-inner .card .card-body h3 {
+  font-family: Fredericka the Great, cursive;
+  padding: 2rem;
+}
+
+.carousel-inner .card .card-body span {
+  padding-bottom: 2rem;
+  right: 0;
+}
+
+.carousel-inner .carousel-control-prev {
+  top: 50%;
+  width: 5rem;
+  margin-left: 5rem;
+}
+
+.carousel-inner .carousel-control-prev .fa-chevron-left {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.carousel-inner .carousel-control-next {
+  top: 50%;
+  width: 5rem;
+  margin-right: 5rem;
+}
+
+.carousel-inner .carousel-control-next .fa-chevron-right {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.badges {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.pill1 {
+  background-color: var(--pillColor1);
+  width: 7rem;
+}
+
+.pill2 {
+  background-color: var(--pillColor2);
+  width: 7rem;
+}
+
+.pill3 {
+  background-color: var(--pillColor3);
+  width: 7rem;
+}
+
+.pill4 {
+  background-color: var(--pillColor4);
+  width: 7rem;
+}
+
+.pill5 {
+  background-color: var(--pillColor5);
+  width: 7rem;
+}
+
+.pill6 {
+  background-color: var(--pillColor6);
+  width: 7rem;
+}
+
+.pill7 {
+  background-color: var(--pillColor7);
+  color: white;
+  width: 7rem;
+}
+
+.btnSend {
+  background: var(--color3);
+  color: white;
+  text-decoration: none;
+  padding: .6em 1.3em;
+  font-size: 1.4em;
+  border-radius: 5em;
+  display: inline-block;
+}
+/*# sourceMappingURL=app.css.map */
