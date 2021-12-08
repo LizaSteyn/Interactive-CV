@@ -1,33 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Special+Elite&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Fredericka+the+Great&family=Special+Elite&display=swap');
 :root{
-    --color1:#F6F4F2;
-    --color2:#425664;
-    --color3:#C6AD8F;
-    --color4:#E1E2E2;
-    --color5:#646C79;
-    --pillColor1:#11ABC1;
-    --pillColor2:#DF3062;
-    --pillColor3:#F5B935;
-    --pillColor4:#4BAC3F;
-    --pillColor5:#9E15BF;
-    --pillColor6:#FA2742;
-    --pillColor7:#051622;
-    
+    --bg-color:#001B45;
+    --primary-text-color:#BAECF8;
+    --heading-color:#03BAC7;
+    --container-color:#7A5398;
+    --initial-color:#06F9E9;
+    --light-accent-color:#E2D1F0;
+    background-color: var(--bg-color);
+    font-size: 62.5%;
 }
-* {
+
+*{
     box-sizing: border-box;
 }
 
 body{
-    margin:0;
-    padding:0;   
+    margin: 0;
+    padding:0;
+    font-family: Delius, cursive;
+    background-color: var(--bg-color);
+    color: var(--primary-text-color);
+    display: flex;
 }
 
 h1{
     text-align: center;
     font-family: Fredericka the Great, cursive;
     padding:2rem;
+    font-size: 4rem;
 }
 
 h2{
@@ -35,6 +35,7 @@ h2{
     font-family: Fredericka the Great, cursive;
     padding-top: 2rem;
     padding-bottom: 1rem;
+
 }
 
 a{
@@ -48,272 +49,472 @@ button{
 }
 
 .body-container{
-    width: 100vw;
-    height: 100vw;
-    background-color: var(--color1);
-    font-family: Special Elite, cursive;
-    font-size: 62.5%;
-}
-
-.container-fluid{
-    background-color: var(--color2);
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 .nav-container{
     place-content: normal left;
-    background-color: var(--color2);
     margin:0;
-
+    margin-right: 4rem;
+    display: flex;
+    place-content: space-between;
     .navbar{
         font-size:1.5rem;
         padding:1rem;
+        border: none;
+        .nav-item{
+            padding: 0.5rem;
+        }
+    }
+    h1{
+        font-size: 4em;
+        margin-left: 2rem;
+        color: var(--heading-color);
     }
 }
 
 .nav-link{
-    padding:1rem;
-    color:var(--color3);
+    font-size: 1.8rem;
+    color:var(--heading-color);
     &:hover {
+        font-size: 2rem;
         font-weight: bold;
-        color:var(--color3);
+        color:var(--primary-text-color);
     }
 }
 
 .toggle{
-    color: var(--color3);
-    font-size: 1.5rem;
+    color: var(--heading-color);
+    font-size: 1.8rem;
     right: 0;
+    border: none;
     &:hover{
         font-size:2rem;
-    }
-}
-
-.card{
-    max-width: 80%;
-    margin:auto;
-    margin-top: 4rem;
-    box-shadow: 0 0.8rem 1.6rem 0 rgba(0,0,0,0.2);
-    color: var(--color4);
-    background-color: var(--color5);
-    
-    .card-body{
-        background-color: var(--color5);
-        font-size: 1.2rem;
-    }
-    .card-title{
-        text-align: center;
-        font-family: Fredericka the Great, cursive;
-        background-color: var(--color5);
-        border-color: var(--color3);  
-    }
-    .card-text{
-        font-size: 1.2rem;
-        text-align: justify;
-    }
-    .card-footer{
-        text-align: center;
-        font-size: 1.2rem;
-        background-color: var(--color5);
-    }
-    blockquote{
-        font-size: 0.9rem;
-        text-align: justify;
-        padding-top: 1rem;
-    }
-    cite{
-        font-size: 1.2rem;
-        font-weight: bold;
+        color: var(--primary-text-color);
+        border: none;
     }
 }
 
 .reference{
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.bg-img{
-    background-image: image('../images/webResul.JPG');
-    margin-top: 2rem;
+.img{
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.img-index{
+    min-width:30%;
+    max-width: 40%;
+    max-height: 50%;
+    min-height: 40%;
+    z-index: 100;
+    position: absolute;
+    display: block;
+    margin-left:6%;
+    margin-top:6%;
+}
+
+.img-about{
+    width: 40%;
+    height: 40%;
+    position: relative;
+    z-index: 0;
+    opacity: 0.4;
+    float: left;
+    margin: 2%;
+    bottom: 0;
+    transform: rotate(-15deg);
+}
+
+.hey-text{
+    float: right;
+    position: relative;
+    max-width: 80%;
+    padding: 1rem;
+    padding-right: 2rem;
+}
+
+.heytaxi-img{
+    position: relative;
+    display: inline-block;
+    width: 18%;
+    max-width: 20%;
+    margin: 1rem;;
+}
+
+.index-title{
+    float:right;
+    top: 10rem;
+    display: block;
+    max-block-size: 800%;
+    font-size: 700%;
+    margin-right: 2%;
+    margin-top:5%;
+}
+
+.card-index{
+    padding-left: 25%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: var(--container-color);
+    width: 80%;
+    float: right;
+    bottom: 10vh;
+    right: 0;
+    border: none;
+    display: block;
+    position: absolute;
+}
+
+.cards{
+    h2{
+        font-size: 3rem;
+    }
+}
+
+.card{
+    max-width: 100%;
+    margin:auto;
+    margin-top: 4rem;
+    box-shadow: 0 0.8rem 1.6rem 0 rgba(148, 146, 146, 0.2);
+    .card-body{
+        background-color: var(--container-color);
+        font-size: 1.5rem;
+    }
+    .card-title{
+        text-align: center;
+        font-family: Fredericka the Great, cursive;
+        background-color: var(--container-color);
+        border-color: var(--initial-color);  
+    }
+    h3{
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+    .card-text{
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+    .card-header{
+        background-color: var(--primary-text-color);
+        color: var(--bg-color);
+        text-align: center;
+    }
+    .card-footer{
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: var(--container-color);
+    }
+    blockquote{
+        font-size: 1.2rem;
+        text-align: justify;
+        padding: 1rem;
+    }
+    cite{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    h4, h5 {
+        display: inline-block;
+        place-content: space-between;
+    }
+    h4{
+        font-size: 2rem;
+        padding: 1rem;
+        font-weight: bold;
+    }
+    h5{
+        font-size: 1.8rem;
+    }
+    ul{
+        margin: auto;
+    }
+}
+
+.card-inverted{
+    .card-header{
+        background-color: var(--light-accent-color);
+    }
+    .card-body{
+        background-color:var(--primary-text-color);
+        color: var(--bg-color);
+        .card-title{
+            background-color: var(--primary-text-color);
+            color: var(--bg-color);
+        }
+    }
+}
+
+.contact-card{
+    width: 60%;
+    height: 550px;
+    margin: auto;
+    margin-bottom: 5rem;
+    h3{
+        font-family: Fredericka the Great, cursive;
+        font-size: 2.5rem; 
+    } 
+    label{
+        font-size: 2rem;
+    }
+    label, input, textarea{
+       margin-left: 4rem;
+    }
+}
+
+.program-card{
+    background-color: var(--primary-text-color);
+    color: var(--bg-color);
+    margin: 3rem;
+    margin-left: 5%;
+    width: 90%;
+    padding: 2.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    h2{
+        font-size: 3rem;
+        padding-top: 1rem;
+    }
+}
+
+.project-card{
+    max-width: 80%;
+    margin: auto;
+}
+
+.pill{
+    border-radius: 50%;
+    background-color: var(--light-accent-color);
+    color: var(--bg-color);
+    width: 9rem;
+    margin: 1rem;
+}
+
+.btnSend{
+    font-size: 2rem;
+    color: var(--primary-text-color);
+    margin: auto;
 }
 
 .accordion-flush{ 
     margin:auto;
     margin-top: 2rem;
-    max-width: 80%;
-    box-shadow: 0 0.8rem 1.6rem 0 rgba(0,0,0,0.2);
-    .accordion-header{
-        padding:0.5rem;
-        h2{
-            color: black;
-        }
-        .fa-chevron-down{
-            color:black;
-        }
-    }
-    .accordion-body{
-        padding:2rem;
-        text-align:justify;
-        font-size: 1.2rem;
-        .card{
-            max-width: 100%;
-            margin-top: 1rem;
-            .card-body{
-                padding-left:4rem;
-            }
-        }
-    }
+    max-width: 100%;
+    background-color: var(--bg-color);
+    font-size: 1.5rem;
 }
 
-.timeline{
-    margin:auto;
-    padding-top:2rem;
-}
-
-.carousel{
-    left: 0;
-    .carousel-indicators{
-       // top:0;
-        bottom: 0;
-        width:100%;
-        position: static;
-        margin-left: 0;
-        margin-bottom: 0;
-        padding: 1rem;
-        background-color: yellow;
-        .year{
-           text-indent: 0!important; 
-           font-size: 1rem;
-           background: 0 0;
-           border: none;
-           margin: 0!important;
-           position: relative;
-           width: 10%!important; 
-           &::before{
-               position: absolute;
-               content: '';
-               border-top: 1px solid #c8cbd0;
-               width: 100%;
-               left:0;
-           }
-           h4{
-            margin-top: -41px;
-            position: absolute;
-            left: 52%;
-            transform: translateX(-50%);
-            font-size: 1.5rem;
-           }
-           i{
-               margin-top: -8px;
-               position: absolute;
-               font-size: 2rem;
-           }
-           .active i{
-               color:#2ecc71;
-           }
-           .active h4{
-               color:#2ecc71;
-               font-size:2rem;
-               position: absolute;
-               text-align: center;
-               margin-top: -49px;
-           }
-          }
-        
-    }
-}
-
-
-
-
-.carousel-inner{
-    .carousel-item{
-        top:0;
-    }
-    .card{
-        width: 100%;
-        height: 100%;
-        color: var(--color4);
-        .card-body{
-            h3{
-                font-family: Fredericka the Great, cursive;
-                padding: 2rem;
-            }
-            span{
-                padding-bottom: 2rem;
-                right: 0;
-            }
-            font-size: 1.2rem;
-        }
-    }
-    .carousel-control-prev{
-        top: 50%;
-        width: 5rem;
-        margin-left: 5rem;
-        .fa-chevron-left{
-            color: black;
-            font-size: 1.5rem;
-        }
-        
-    }
-    .carousel-control-next{
-        top: 50%;
-        width: 5rem;
-        margin-right: 5rem;
-        .fa-chevron-right{
-            color:black;
-            font-size: 1.5rem;
-        }
-    }
-}
-
-.badges{
-    font-size: 1.2rem;
+.accordion-header{
+    padding:0.5rem;
+    background-color: var(--bg-color);
     text-align: center;
+    h2{
+        font-size: 3rem;
+        color: var(--heading-color);
+    }
+    .fa-chevron-down{
+        color:var(--heading-color);
+    }
 }
 
-.pill1{
-    background-color: var(--pillColor1);
-    width: 7rem;
+.accordion-body{
+    padding:2rem;
+    margin: 2rem;
+    text-align:justify;
+    font-size: 1.5rem;
+    background-color: var(--bg-color);
+    .card{
+        max-width: 100%;
+        margin-top: 1rem;
+        .card-body{
+            padding-left:4rem;
+        }
+    }
 }
 
-.pill2{
-    background-color: var(--pillColor2);
-    width: 7rem;
-} 
-
-.pill3{
-    background-color: var(--pillColor3);
-    width: 7rem;
-} 
-
-.pill4{
-    background-color: var(--pillColor4);
-    width: 7rem;
-} 
-
-.pill5{
-    background-color: var(--pillColor5);
-    width: 7rem;
+.timeline-line{
+    position: relative;
+    padding: 20px 0 20px;
+    list-style: none;
+    &::before{
+        content: " ";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 4px;
+        margin-left: -1.5px;
+        background-color: turquoise;
+    }
 }
 
-.pill6{
-    background-color: var(--pillColor6);
-    width: 7rem;
+.timeline-line > li {
+    position: relative;
+    margin-bottom: 20px;
+    &::before{
+        content: " ";
+        display: table;
+    }
+    &::after{
+        content: " ";
+        display: table;
+        clear: both;
+    }
 }
 
-.pill7{
-    background-color: var(--pillColor7);
-    color: white;
-    width: 7rem;
+.timeline-line > li > .timeline-panel{
+    float: left;
+    position: relative;
+    width: 46%;
+    padding: 20px;
+    &::before{
+        content: " ";
+        display: inline-block;
+        position: absolute;
+        top: 26px;
+        right: -15px;
+        border-top: 15px solid transparent;
+        border-right: 0 solid black;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid black;
+    }
+    &::after{
+        content: " ";
+        display: inline-block;
+        position: absolute;
+        top: 27px;
+        right: -14px;
+        border-top: 14px solid transparent;
+        border-right: 0 solid #ccc;
+        border-bottom: 14px solid transparent;
+        border-left: 14px solid #ccc;
+    }
 }
 
-.btnSend{
-    background: var(--color3);
-    color: white;
-    text-decoration: none;
-    padding: .6em 1.3em;
+.timeline-line > li > .timeline-badge {
+    z-index: 100;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    border-radius: 50%;
+    text-align: center;
     font-size: 1.4em;
-    border-radius: 5em;
-    display: inline-block;
+    line-height: 50px;
+    color: #fff;
+    background-color: #999999;
+    i .fa{
+        z-index: 200;
+        color: chartreuse;
+    }
 }
 
+.timeline-line > li.inverted > .timeline-panel{
+    float: right;
+    &::before{
+        right: auto;
+        left: -15px;
+        border-right-width: 15px;
+        border-left-width: 0;
+    }
+    &::after{
+        right: auto;
+        left: -14px;
+        border-right-width: 14px;
+        border-left-width: 0;
+    }
+}
 
+footer{
+    border-top: var(--heading-color);
+    border-width: 2rem;
+    bottom: 0;
+    margin-top: 4rem;
+    padding:2rem;
+    position:sticky;
+    font-size: 1.5rem;
+    a{
+        margin: 6%;
+        color: var(--light-accent-color);
+        &:hover{
+            font-weight: bold;
+            font-size: 2rem;
+            color: var(--light-accent-color);
+        }
+    }
+}
+
+@media(max-width:767px){
+    .timeline-line::before{
+       left: 40px; 
+    }
+
+    .timeline-line > li > .timeline-panel{
+        width: 80%;
+
+        &::before{
+            right: auto;
+            left: -15px;
+            border-right-width: 15px;
+            border-left-width: 0;
+        }
+        &::after{
+            right: auto;
+            left: -14px;
+            border-right-width: 14px;
+            border-left-width: 0;
+        }
+    }
+
+    .timeline-line > li > .timeline-panel{
+        float: right;
+    }
+    .timeline-line > li > .timeline-badge{
+        top: 16px;
+        left: 15px;
+        margin-left: 0;
+    }
+
+    .img-index{
+        display: block;
+        max-width: 80%;
+        position: relative;
+        z-index: 0;
+        margin: auto;
+    }
+
+    .card-index{
+        position: relative;
+        padding:1rem;
+        margin:2rem;
+        right:10%;
+        bottom: 0;
+    }
+
+    .index-title{
+        position: relative;
+        top: 0;
+        margin-top:0;
+        margin: auto;
+        right: 15%;
+    }
+}
+
+@media(max-width:992px){
+    .index-title{
+        font-size: 500%;
+        margin-top: 10%;
+    }
+
+    .img-index{
+        margin-left: 3%;
+        margin-top: 3%;
+    }
+}

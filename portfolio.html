@@ -1,89 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Title</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="/css/app.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="/fontawesome/css/all.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="/bootstrap/themes/bootstrap.min.css">
+  <link rel="stylesheet" href="/bootstrap/themes/bootstrap.css">
+  <link rel="stylesheet" href="/css/app.css">
+  <link rel="stylesheet" href="fontawesome/fontawesome/css/all.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script src="/fontawesome/fontawesome/js/all.js"></script>
 </head>
-
 <body>
-
     <div class="body-container">
-        <div class="nav-container">
-            <nav class="navbar navbar-expand-lg ">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler" ><i class="fas fa-ellipsis-h toggle"></i></span>
-                  </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a href="/index.html" class="nav-link"><i class="fas fa-home"></i>  Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/aboutme.html" class="nav-link"><i class="fas fa-address-card"></i> About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/employmenthistory.html" class="nav-link"><i class="fas fa-briefcase"></i> Employment History</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/portfolio.html" class="nav-link"><i class="fas fa-book-open"></i>  Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/contactme.html" class="nav-link"><i class="fas fa-paper-plane"></i>  Contact Me</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        <div class="container-fluid">
+            <div class="nav-container">
+                <a href="#" class="navbar-brand"><h1>LS</h1></a>
+                <nav class="navbar navbar-expand-lg ">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler"><i class="fas fa-ellipsis-h toggle"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a href="/index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/aboutme.html" class="nav-link"><i class="fas fa-address-card"></i> About
+                                    Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/employmenthistory.html" class="nav-link"><i class="fas fa-briefcase"></i>
+                                    Employment History</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/portfolio.html" class="nav-link"><i class="fas fa-book-open"></i>
+                                    Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/contactme.html" class="nav-link"><i class="fas fa-paper-plane"></i> Contact
+                                    Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
 
-        <div class="card-holder ">
-            <div class="card-left ">
-                <h2>Programming Languages</h2>
-                <div class="badges">
-                    <span class="badge rounded-pill pill1">C#</span>
-                    <span class="badge rounded-pill pill2">C++</span>
-                    <span class="badge rounded-pill pill3">SQL</span>
-                    <span class="badge rounded-pill pill4">Java</span>
-                    <span class="badge rounded-pill pill5">HTML</span>
-                    <span class="badge rounded-pill pill6">CSS</span>
-                    <span class="badge rounded-pill pill7">Python</span>
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="card d-inline-block program-card">
+                    <h2>Programming Languages</h2>
+                    <div class="badges">
+                        <span class="badge rounded-pill pill">C#</span>
+                        <span class="badge rounded-pill pill">C++</span>
+                        <span class="badge rounded-pill pill">SQL</span>
+                        <span class="badge rounded-pill pill">Java</span>
+                        <span class="badge rounded-pill pill">HTML</span>
+                        <span class="badge rounded-pill pill">CSS</span>
+                        <span class="badge rounded-pill pill">Python</span>
+                    </div>
                 </div>
             </div>
-            <div class="card-right ">
-                <h2>Frameworks</h2>
-                <div class="badges">
-                    <span class="badge rounded-pill pill1">ASP.NET</span>
-                    <span class="badge rounded-pill pill2">Bootstrap</span>
-                    <span class="badge rounded-pill pill3">Spring Boot</span>
-                    <span class="badge rounded-pill pill4">Razor</span>
+            <div class="col-lg-6 col-md-12">
+                <div class="card d-inline-block program-card">
+                    <h2>Frameworks</h2>
+                    <div class="badges">
+                        <span class="badge rounded-pill pill">ASP.NET</span>
+                        <span class="badge rounded-pill pill">Bootstrap</span>
+                        <span class="badge rounded-pill pill">Spring Boot</span>
+                        <span class="badge rounded-pill pill">Razor</span>
+                    </div>
                 </div>
             </div>
-
+        </div>
+        <div class="row">
             <div class="cards">
                 <h2>Projects</h2>
-                <div class="card">
+                <div class="card project-card mb-5">
                     <div class="card-title mb-0">
                         <h2>Hey!Taxi</h2>
                     </div>
                     <div class="card-body mt-0">
-                        <p class="card-text">Hey!Taxi is a free website where taxi drivers and passengers meet.  
+                        <p class="card-text d-inline-block hey-text">Hey!Taxi is a free website where taxi drivers and passengers meet.  
                         On this website they have the freedom to schedule a taxi at any time of the day, without any cover charge from Hey!Taxi.  
                         Drivers have complete control over their schedules and passengers can always be assured that they will have a ride when they need one.
-                        It is the easy way to catch a ride.</p>
+                        It is the easy way to catch a ride.   
+                        </p><img src="/images/Hey!Taxi.jpg" class="heytaxi-img" alt="A look at the program">
                     </div>
                     <div class="card-footer">
-                        <span class="badge rounded-pill pill1">C#</span>
-                        <span class="badge rounded-pill pill3">SQL</span>
-                        <span class="badge rounded-pill pill6">CSS</span>
-                        <span class="badge rounded-pill pill5">HTML</span>
-                        <span class="badge rounded-pill pill1">ASP.NET</span>
+                        <span class="badge rounded-pill pill">C#</span>
+                        <span class="badge rounded-pill pill">SQL</span>
+                        <span class="badge rounded-pill pill">CSS</span>
+                        <span class="badge rounded-pill pill">HTML</span>
+                        <span class="badge rounded-pill pill">ASP.NET</span>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card project-card mb-5">
                     <div class="card-title mb-0">
                         <h2>Fine Wines - Group Project</h2>
                     </div>
@@ -99,14 +116,14 @@
                         </p>
                     </div>
                     <div class="card-footer">
-                        <span class="badge rounded-pill pill1">C#</span>
-                        <span class="badge rounded-pill pill3">SQL</span>
-                        <span class="badge rounded-pill pill6">CSS</span>
-                        <span class="badge rounded-pill pill5">HTML</span>
-                        <span class="badge rounded-pill pill1">ASP.NET</span>
+                        <span class="badge rounded-pill pill">C#</span>
+                        <span class="badge rounded-pill pill">SQL</span>
+                        <span class="badge rounded-pill pill">CSS</span>
+                        <span class="badge rounded-pill pill">HTML</span>
+                        <span class="badge rounded-pill pill">ASP.NET</span>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card project-card mb-5">
                     <div class="card-title mb-0">
                         <h2>Fire Damage Assessment System Database</h2>
                     </div>
@@ -114,33 +131,26 @@
                         <p class="card-text">This project focused on creating a database that could be used to track building damage caused by bushfires.</p>
                     </div>
                     <div class="card-footer">
-                        <span class="badge rounded-pill pill3">SQL</span>
+                        <span class="badge rounded-pill pill">SQL</span>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card project-card mb-5">
                     <div class="card-title mb-0">
                         <h2>Generic Search</h2>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">A project to demonstrate ability to analyse, design and code any method for a generic linked list class. 
+                        <p class="card-text d-inline-block hey-text">A project to demonstrate ability to analyse, design and code any method for a generic linked list class. 
                         One requirement was that the project manipulates the linked list.</p>
+                            <img class="heytaxi-img" src="/images/searchFor.jpg" alt="Code for generic search for function">
                     </div>
                     <div class="card-footer">
-                        <span class="badge rounded-pill pill4">Java</span>
+                        <span class="badge rounded-pill pill">Java</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
 
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="/js/app.js"></script>
-    <script src="/fontawesome/js/all.js"></script>
 </body>
-
 </html>
